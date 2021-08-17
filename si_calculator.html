@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple interest calculator</title>
+</head>
+<style>
+    .body{
+        color:black;
+        text-align:center;
+        margin-top: 20px;
+        font-size: 25px;
+        background-color:darkkhaki
+    }
+    h1{
+        font-size: 30px;
+    }
+</style>
+<script>
+    function Calculate()
+    {
+        p = document.getElementById('p').value
+        r = document.getElementById('r').value
+        t = document.getElementById('t').value
+      result= document.getElementById('result')
+          result.innerHTML = (p*t*r/100)
+    }
+
+</script>
+</head>
+<body class= 'body'>
+principle Amount: <input id= "p" type="text"></body></br><br>
+rate of interest: <input id="r" type="text"></br></br>
+total months: <input id= "t" type="text"></br></br>
+<button onclick="Calculate()">Calculate</button>
+<h1 id = "result"> SIMPLE INTEREST : </h1>
+</body>
+</html>
